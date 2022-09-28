@@ -1160,6 +1160,16 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
 <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <script src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
     
+    <script type="text/javascript">
+    var OriginTitile = document.title,
+        st;
+    document.addEventListener("visibilitychange", function () {
+        document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+            "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+    })
+</script>
 
     <!-- 图片放大 -->
     

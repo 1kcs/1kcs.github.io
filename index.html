@@ -1243,9 +1243,6 @@
           <h2>亦轩的博客</h2>
         
         
-          <p>我是副标题</p>
-
-        
         
           <p><span id="jinrishici-sentence">亦轩的博客</span></p>
           <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -1415,7 +1412,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed Sep 28 2022 17:46:11 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Wed Sep 28 2022 18:00:52 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2022-09-28 日</div>
           
         </div>
@@ -1482,35 +1479,9 @@
 <!-- 花瓣和雪花飘落 -->
 <!-- 雪花和花瓣特效 -->
 
-  
-    <script src="/js/falling/sakura.js"></script>
-  
-
 
 
 <!-- 灯笼 -->
-
-  <!-- 灯笼1 -->
-  <div class="deng-box">
-    <div class="deng">
-        <div class="xian"></div>
-        <div class="deng-a">
-            <div class="deng-b"><div class="deng-t">节</div></div>
-        </div>
-        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
-    </div>
-  </div>
-  
-  <!-- 灯笼2 -->
-  <div class="deng-box1">
-    <div class="deng">
-        <div class="xian"></div>
-        <div class="deng-a">
-            <div class="deng-b"><div class="deng-t">春</div></div>
-        </div>
-        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
-    </div>
-  </div>
 
 
       </main>
@@ -1830,6 +1801,16 @@
 <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <script src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
     
+    <script type="text/javascript">
+    var OriginTitile = document.title,
+        st;
+    document.addEventListener("visibilitychange", function () {
+        document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+            "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                document.title = OriginTitile
+            }, 3e3))
+    })
+</script>
 
     <!-- 图片放大 -->
     
